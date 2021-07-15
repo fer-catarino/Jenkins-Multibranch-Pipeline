@@ -1,10 +1,10 @@
 pipeline {
 	agent any
+		environment {
+			EXECUTE = 'True'
+		}
 		stages {
 			stage('First') {
-				environment {
-					EXECUTE = 'True'
-				}
 				steps {
 					sh 'echo "Step One"'
 				}
