@@ -25,6 +25,10 @@ pipeline {
 				when {
                			 environment name: 'EXCECUTE', value: 'false'
             			}
+				steps {
+					script {
+					}
+				}
 			}
 		}
 }
